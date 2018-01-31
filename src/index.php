@@ -6,9 +6,6 @@
 		<link href="zbp.css" rel="stylesheet">
 	</head>
 	<body>
-		<div id="head">
-			<h1>Zero ball pool.</h1>
-			<p><a href="http://blacksilver.xyz">My</a> latest overambitious project.</p>
-		</div>
+<?php include($_SERVER["DOCUMENT_ROOT"] . "/common/head.php"); ?>
 	</body>
 </html>
