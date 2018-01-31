@@ -1,4 +1,3 @@
-dden = build/.htaccess
 all = $(shell ./getfiles)
 
 .PHONY: build clean test
@@ -22,7 +21,7 @@ build/%.json: src/%.json
 		cp	$< $@
 
 
-build/%.css: src/%.less const.less
+build/%.css: src/%.less
 		lessc	$< $@
 
 
