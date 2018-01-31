@@ -6,7 +6,9 @@
 		<link href="zbp.css" rel="stylesheet">
 	</head>
 	<body>
-		<h1>Zero ball pool</h1>
-		<p>My latest overambitious project</p>
+		<div id="head">
+			<h1>Zero ball pool.</h1>
+			<p><a href="http://blacksilver.xyz">My</a> latest overambitious project.</p>
+		</div>
 	</body>
 </html>
