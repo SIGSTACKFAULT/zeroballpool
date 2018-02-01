@@ -2,10 +2,9 @@
 <html>
 	<head>
 		<title>Zero ball pool.</title>
-		<link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
-		<link href="zbp.css" rel="stylesheet">
+<?php include($_SERVER["DOCUMENT_ROOT"] . "/common/head.php") ?>
 	</head>
 	<body>
-<?php include($_SERVER["DOCUMENT_ROOT"] . "/common/head.php"); ?>
+<?php include($_SERVER["DOCUMENT_ROOT"] . "/common/header.php"); ?>
 	</body>
 </html>
