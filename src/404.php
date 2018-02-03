@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 	<head>
-		<title>404 | Zero ball pool.</title>
+		<title>Zero Ball Pool. 404.</title>
 <?php include($_SERVER["DOCUMENT_ROOT"] . "/common/head.php") ?>
 	<link href="/404.css" rel="stylesheet">
 	</head>
