@@ -2,38 +2,46 @@ all = $(shell ./getfiles)
 
 .PHONY: build clean test
 
-build: $(all)
+build: /zbp/pools/ $(all)
+
+/zbp/pools/:
+	sudo mkdir -p $@
 
 clean:
-		rm -r build/*
+	rm -r build/*
 
 test:
-		@echo $(all)
+	@echo $(all)
 
 
 build/%.js: src/%.js
-		cp	$< $@
+	cp	$< $@
 build/%.php: src/%.php
-		cp	$< $@
+	cp	$< $@
 build/%.css: src/%.css
-		cp	$< $@
+	cp	$< $@
 build/%.json: src/%.json
-		cp	$< $@
+	cp	$< $@
+build/%.py: src/%.py
+	cp $< $@
 
 
-build/%.css: src/%.less
-		lessc	$< $@
+build/%.css: src/%.less colours.less
+	lessc	$< $@
 
 
 build/favicon.ico: src/favicon.ico
-		cp	$< $@
+	cp	$< $@
 build/.htaccess: src/.htaccess
-		cp	$< $@
+	cp	$< $@
+build/%/.htaccess: src/%/.htaccess
+	cp	$< $@
+	
 
 
 
 build/:
-		mkdir	$@
+	mkdir	$@
 build/%/:
-		mkdir	$@
+	mkdir	$@
 
