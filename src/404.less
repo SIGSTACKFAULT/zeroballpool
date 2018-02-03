@@ -1,0 +1,44 @@
+@import "colours";
+
+
+@bracket-font: Roboto, Arial, sans-serif;
+@bracket-color: @GREY2;
+@bracket-padding: 20px;
+
+
+#err {
+	font-family: Lobster, cursive;
+	font-size: 100px;
+	margin: 10px;
+	text-align: center;
+	color: @HILIGHT;
+}
+#err::before, #err::after {
+	font-family: Roboto, Arial, sans-serif;
+	color: @GREY2;
+	padding: 0 20px;
+}
+#err::before {
+	content: "[";
+}
+#err::after {
+	content: "]";
+}
+
+#sub {
+	font-family: Roboto, Arial, sans-serif;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+hr {
+	border: 1px solid @BLACKISH;
+	width: 75%;
+}
+
+#hint {
+	color: @GREY1;
+	text-align: center;
+	font-family: Roboto;
+	font-size: 0.75em;
+}
