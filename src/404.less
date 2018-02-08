@@ -5,40 +5,49 @@
 @bracket-color: @GREY2;
 @bracket-padding: 20px;
 
+#content {
+	h1 {
+		font-family: Lobster, cursive;
+		font-size: 100px;
+		margin: 10px;
+		text-align: center;
+		color: @HILIGHT;
+	}
+	h1::before, h1::after {
+		font-family: Roboto, Arial, sans-serif;
+		color: @GREY2;
+		padding: 0 20px;
+	}
+	h1::before {
+		content: "[";
+	}
+	h1::after {
+		content: "]";
+	}
 
-#err {
-	font-family: Lobster, cursive;
-	font-size: 100px;
-	margin: 10px;
-	text-align: center;
-	color: @HILIGHT;
-}
-#err::before, #err::after {
-	font-family: Roboto, Arial, sans-serif;
-	color: @GREY2;
-	padding: 0 20px;
-}
-#err::before {
-	content: "[";
-}
-#err::after {
-	content: "]";
+	h2 {
+		font-family: Roboto, Arial, sans-serif;
+		text-align: center;
+		font-size: 1.5em;
+	}
+
+	hr {
+		border: 1px solid @BLACKISH;
+		width: 50%;
+	}
+	
+	#links, #hint {
+		text-align: center;
+	}
+	#hint {
+		position: absolute;
+		bottom: 1em;
+		width: 100%;
+	}
 }
 
-#sub {
-	font-family: Roboto, Arial, sans-serif;
-	text-align: center;
-	font-size: 1.5em;
-}
-
-hr {
-	border: 1px solid @BLACKISH;
-	width: 75%;
-}
-
-#hint {
+.sub {
 	color: @GREY1;
-	text-align: center;
 	font-family: Roboto;
 	font-size: 0.75em;
 }

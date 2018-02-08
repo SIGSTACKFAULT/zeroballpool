@@ -7,13 +7,14 @@
 	</head>
 	<body>
 <?php include($_SERVER["DOCUMENT_ROOT"] . "/common/header.php"); ?>
-	
-	<h1 id="err">404</h1>
-	<p  id="sub">There is no page here :(</p>
+		<div id="content">
+			<h1>404</h1>
+			<h2>There is no page here :(</h2>
 
-	<hr>
-	
-	<p id="hint">What else do you expect this page to say?</p>
-
+			<hr>
+			
+			<p id="links" class="sub"><a href="#">Back</a> | <a href="/">Home</a></p>
+			<p id="hint"  class="sub">What else do you expect this page to say?</p>
+		</div>
 	</body>
 </html>
