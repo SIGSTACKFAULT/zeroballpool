@@ -1,4 +1,3 @@
-<!doctype html>
 <?php 
 $ID = $_GET["id"];
 $NAME = shell_exec("python3 " . $_SERVER["DOCUMENT_ROOT"] . "/common/getname.py $ID");
@@ -6,11 +5,13 @@ $NAME = shell_exec("python3 " . $_SERVER["DOCUMENT_ROOT"] . "/common/getname.py 
 // TODO: check if NAME is empty; display error page.
 
 if($ID == ""){
+	http_response_code(404);
 	include($_SERVER["DOCUMENT_ROOT"] . "/404.php");
 	// TODO: More informative Error page...
 } else {
 
 ?>
+<!doctype html>
 <html>
 	<head>
 <?php
