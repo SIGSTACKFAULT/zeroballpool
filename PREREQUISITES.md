@@ -1,4 +1,4 @@
-# ZBP - Prerequisites.
+# Prerequisites.
 
 Apache2.  
 PHP.  
