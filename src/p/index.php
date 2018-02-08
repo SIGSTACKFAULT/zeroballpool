@@ -3,17 +3,37 @@
 $ID = $_GET["id"];
 $NAME = shell_exec("python3 " . $_SERVER["DOCUMENT_ROOT"] . "/common/getname.py $ID");
 
-// check if NAME is empty; display error page.
+// TODO: check if NAME is empty; display error page.
+
+if($ID == ""){
+	include($_SERVER["DOCUMENT_ROOT"] . "/404.php");
+	// TODO: More informative Error page...
+} else {
+
 ?>
 <html>
 	<head>
-		<title>Zero ball pool. | #<?php echo $ID;?></title>
-<?php include($_SERVER["DOCUMENT_ROOT"] . "/common/head.php"); ?>
+<?php
+		echo "<title>Zero Ball Pool. $NAME.</title>";
+include($_SERVER["DOCUMENT_ROOT"] . "/common/head.php");
+?>
 	</head>
 	<body>
 <?php include($_SERVER["DOCUMENT_ROOT"] . "/common/header.php"); ?>
 	
-	<h1>Pool: <span id="pool-name"><?php echo $NAME;?></span><span id="pool-id"><?php echo $ID;?></span></h1>
+	<h1 id="pool-title">
+		<span id="pool-name">
+			<?php echo $NAME;?>
+		</span>
+		<span id="pool-id">
+			<?php echo $ID;?>
+		</span>
+	</h1>
 	<hr>
 	
+	<p>Placeholder content ;)</p>
+	
 	</body>
+<?php
+}
+?>
