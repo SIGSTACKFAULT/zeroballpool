@@ -1,1 +1,3 @@
 ErrorDocument 404 /404.php
+RewriteEngine on
+RewriteRule ^p/([0-9]+)/?$ p/?id=$1 [NC,L]
