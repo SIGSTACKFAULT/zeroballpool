@@ -13,7 +13,9 @@
 
 			<hr>
 			
-			<p id="links" class="sub"><a href="#">Back</a> | <a href="/">Home</a></p>
+			<p id="links" class="sub">
+				<a href="#" onclick="history.back();">Back</a> |
+				<a href="/">Home</a></p>
 			<p id="hint"  class="sub">What else do you expect this page to say?</p>
 		</div>
 	</body>
